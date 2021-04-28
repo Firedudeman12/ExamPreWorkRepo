@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            border: 3px solid black;
+            align-content: Center;
+            padding: 10em;
+            margin: 10em;
+            background-color: white;
+        }
+
+        html {
+            background-color: maroon;
+        }
+
+        #inputname, #email, #Phone {
+            margin-left: 320px
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            padding-right: 3em;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        div {
+            border: 3px solid black;
+            padding-left: 2em;
+        }
+
+            div p {
+                font-size: 1.5em;
+            }
+
+        a {
+            border: 1em thick black;
+        }
+    </style>
+    <script type="text/javascript" src="/Public/js/form.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <h1>Jackson Brookshaw/8657234</h1>
+    <a id="HomeButton" href="/Homepage.html">Home</a><br />
+
+    <form name="RegistrationGui" id="RegistrationGui" method="get" onsubmit="return submitform(); return false;" action="" tabindex="0">
+        <label for="NameRegistrant">Registrant Name*:</label>
+        <input type="text" name="NameRegistrant" id="FirstName">
+        <input type="text" name="NameRegistrant" id="LastName">
+        <br /><br /><br />
+
+        <label for="Address">Address:</label>
+        <input type="text" name="Address" id="Address">
+        <br /><br /><br />
+
+        <label for="PhoneNumber">PhoneNumber*:</label>
+        <input type="text" name="PhoneNumber" id="PhoneNumber">
+        <br /><br /><br />
+
+        <label for="City">City*:</label>
+        <input type="text" name="City" id="City">
+        <br /><br /><br />
+
+        <label for="Province">Province*:</label>
+        <input type="text" name="Province" id="Province">
+        <br /><br /><br />
+
+        <label for="PostalCode">Postal Code*:</label>
+        <input type="text" name="PostalCode" id="PostalCode">
+        <br /><br /><br />
+
+        <label for="EmailAddress">EmailAddress*:</label>
+        <input type="text" name="EmailAddress" id="EmailAddress">
+        <br /><br /><br />
+
+        <label for="GroupSize">Size of Group*:</label>
+        <input type="text" name="GroupSize" id="GroupSize">
+        <br /><br /><br />
+
+        <label for="Days">Choose number of Days:</label>
+        <select name="Days" id="Days">
+            <option value="0">-{-Select Day to Register For -}-</option>
+            <option value="1">Day 1</option>
+            <option value="2">Day 2</option>
+            <option value="3">Both</option>
+          </select>
+
+        <input type="submit" value="SubmitSale" id="SubmitSale" tabindex="0" onsubmit="return submitform(); return false;">
+        <p id="errorsLog"> </p>
+
+    </form>
+    <div class="VehicleSaleInvoice">
+        <h1>Vehicle Sale Information</h1>
+        <p id="SellerInformation"> </p>
+    </div>
+</body>
+</html>

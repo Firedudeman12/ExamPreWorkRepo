@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Of Registration </title>
+    <style>
+        body {
+            border: 3px solid black;
+            align-content:Center;
+            padding:1em;
+            margin: 1em;
+            background-color: white;
+        }
+        html {
+            background-color: maroon;
+        }
+   #inputname, #email, #Phone{
+         margin-left: 320px   
+     }
+     h1 {
+         text-align: center;
+     }
+  #Product1 {
+         margin-left: 220px;
+  }
+  #Product2 {
+         margin-left: 255px;
+  }
+  #Product3 {
+         margin-left: 215px;
+  }
+  #Delivery{
+      margin-left: 275px;
+  }
+  #submit{
+      margin-left: 190px;
+  }
+  div {
+    border: 3px solid black;  
+    padding-left: 2em;
+  }
+  div p {
+      font-size: 1.5em;
+
+  }
+  th {
+      padding-left: 1em;
+  }
+  td {
+      padding-left: 2em;
+  }
+    </style>
+   <script type="text/javascript" src="js/javascript.js"></script>
+   <script type="text/javascript" src="/index.js"></script>
+   <script type="text/javascript" src="/Public/js/form.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Confirmation Of Registration</h1>
+        <a id="HomeButton" href="/Homepage.html">Home</a><br><br><br>
+
+        <h2> Is this your order?</h2>
+        <div id="RegistrationInformation">     
+         <script>
+            for(var i = 0; i < localStorage.length; i++){
+                var item = localStorage.getItem(localStorage.key(i)).split(',', 8);
+                if (i == (localStorage.length - 1)) {
+                document.getElementById("RegistrationInformation").innerHTML +=  
+                `
+                        <p>  ${item[0]} </p>
+                `}
+            }
+        </script>
+        </div> <br />
+        
+   
+</body>
